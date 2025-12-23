@@ -1,0 +1,10 @@
+# Environment variable files
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/

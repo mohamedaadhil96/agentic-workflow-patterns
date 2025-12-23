@@ -1,0 +1,3 @@
+## Agentic Workflow Patterns
+
+Large Language Models (LLMs) have transformed how we tackle complex tasks, enabling the creation of agents that operate autonomously. Unlike AI agents that function without a predefined sequence of steps, agentic workflows leverage LLMs within structured, task-oriented processes. To design effective LLM workflows, it's crucial to understand key patterns. In this tutorial, we'll explore four essential workflow patterns: Prompt Chaining, Orchestrator-Workers, Evaluator-Optimizer, and Parallelization.
