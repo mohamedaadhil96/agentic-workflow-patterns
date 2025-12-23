@@ -1,7 +1,3 @@
-## Agentic Workflow Patterns
-
-Large Language Models (LLMs) have transformed how we tackle complex tasks, enabling the creation of agents that operate autonomously. Unlike AI agents that function without a predefined sequence of steps, agentic workflows leverage LLMs within structured, task-oriented processes. To design effective LLM workflows, it's crucial to understand key patterns. In this tutorial, we'll explore four essential workflow patterns: Prompt Chaining, Orchestrator-Workers, Evaluator-Optimizer, and Parallelization.
-
 
 # Agentic Workflow Patterns
 
@@ -9,7 +5,9 @@ Large Language Models (LLMs) have transformed how we tackle complex tasks, enabl
 [![GitHub forks](https://img.shields.io/github/forks/mohamedaadhil96/agentic-workflow-patterns?style=social)](https://github.com/mohamedaadhil96/agentic-workflow-patterns/forks)
 [![GitHub license](https://img.shields.io/github/license/mohamedaadhil96/agentic-workflow-patterns)](https://github.com/mohamedaadhil96/agentic-workflow-patterns/blob/main/LICENSE)
 
-A curated collection of design patterns for building **agentic AI workflows** with Large Language Models (LLMs).
+Large Language Models (LLMs) have revolutionized how we approach complex problem-solving, enabling the creation of sophisticated AI agents that can operate autonomously or semi-autonomously. However, building robust, scalable, and maintainable agentic systems requires understanding fundamental design patterns.
+
+Agentic workflows leverage LLMs within structured, task-oriented processes, combining the power of generative AI with proven software engineering principles. This repository serves as both a learning resource and a practical reference for developers building real-world LLM applications.
 
 This repository explores proven patterns like prompt chaining, tool calling, planning, reflection, routing, multi-agent collaboration, and more. Each pattern includes:
 - Clear explanations
@@ -22,9 +20,6 @@ This repository explores proven patterns like prompt chaining, tool calling, pla
 
 - [Introduction](#introduction)
 - [Key Patterns](#key-patterns)
-- [Installation](#installation)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -35,15 +30,24 @@ To design effective and scalable LLM applications, it's crucial to understand re
 ## Key Patterns
 
 ### 1. Prompt Chaining
-**Description**: Breaks down a complex task into a sequence of simpler prompts, where the output of one prompt feeds into the next. Ideal for step-by-step reasoning, data transformation, or multi-stage generation.
+
+![Prompt Chaining Workflow](https://github.com/mohamedaadhil96/agentic-workflow-patterns/blob/d5dea7811db450f144427593421cdc89257fcb1c/Prompt%20Chaining/prompt_chain_diagram.png)
+
+**Description**: Prompt Chaining is a foundational design pattern in agentic AI workflows. It breaks down complex tasks into a sequence of smaller, interconnected prompts, where the output of one large language model (LLM) call becomes the input for the next.
+
+This approach enables structured, step-by-step reasoning and improves reliability, controllability, and performance compared to handling everything in a single large prompt.
+
+### How It Works
+In prompt chaining:
+
+1. A complex goal decomposes into logical subtasks.
+2. Each subtask is handled by a specialized prompt.
+3. Outputs are passed sequentially (often formatted as structured data like JSON for easy parsing).
+4. The chain continues until the final result is produced.
+
+This mimics a pipeline or assembly line, allowing focused processing at each stage. It evolved from techniques like Chain-of-Thought prompting but emphasizes modular, sequential execution.
+
+**NOTE**: This Breaks down a complex task into a sequence of simpler prompts, where the output of one prompt feeds into the next. Ideal for step-by-step reasoning, data transformation, or multi-stage generation.
 
 **Use Cases**: Content generation pipelines, research summarization, code refactoring.
 
-```mermaid
-graph LR
-    A[User Input] --> B[Prompt 1: Extract Key Facts]
-    B --> C[Output 1]
-    C --> D[Prompt 2: Analyze Implications]
-    D --> E[Output 2]
-    E --> F[Prompt 3: Generate Final Response]
-    F --> G[Final Output]
