@@ -51,3 +51,8 @@ This mimics a pipeline or assembly line, allowing focused processing at each sta
 
 **Use Cases**: Content generation pipelines, research summarization, code refactoring.
 
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
