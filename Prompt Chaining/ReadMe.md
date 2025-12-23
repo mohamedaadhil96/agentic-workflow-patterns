@@ -1,5 +1,7 @@
 ## Prompt Chaining - Agentic Workflow Design Pattern
 
+![Prompt Chaining Workflow](https://github.com/mohamedaadhil96/agentic-workflow-patterns/blob/d5dea7811db450f144427593421cdc89257fcb1c/Prompt%20Chaining/prompt_chain_diagram.png)
+
 Prompt Chaining is a foundational design pattern in agentic AI workflows. It breaks down complex tasks into a sequence of smaller, interconnected prompts, where the output of one large language model (LLM) call becomes the input for the next.
 
 This approach enables structured, step-by-step reasoning and improves reliability, controllability, and performance compared to handling everything in a single large prompt.
