@@ -1,5 +1,7 @@
 ### Agentic Workflow Design Pattern - Prompt Chaining
 
+![Agentic Workflow](routing_agent.png)
+
 The Routing Agentic Workflow Design Pattern is a foundational design pattern in agentic AI systems. It enables intelligent classification of user inputs and dynamic delegation to specialized agents, tools, prompts, or sub workflows.
 
 #### How It Works
