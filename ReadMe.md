@@ -3,7 +3,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/mohamedaadhil96/agentic-workflow-patterns?style=social)](https://github.com/mohamedaadhil96/agentic-workflow-patterns/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/mohamedaadhil96/agentic-workflow-patterns?style=social)](https://github.com/mohamedaadhil96/agentic-workflow-patterns/forks)
-[![GitHub license](https://img.shields.io/github/license/mohamedaadhil96/agentic-workflow-patterns)](https://github.com/mohamedaadhil96/agentic-workflow-patterns/blob/main/LICENSE)
+
 
 Large Language Models (LLMs) have revolutionized how we approach complex problem-solving, enabling the creation of sophisticated AI agents that can operate autonomously or semi-autonomously. However, building robust, scalable, and maintainable agentic systems requires understanding fundamental design patterns.
 
@@ -51,23 +51,19 @@ This mimics a pipeline or assembly line, allowing focused processing at each sta
 
 **Use Cases**: Content generation pipelines, research summarization, code refactoring.
 
+### 2. Agentic Workflow Design Pattern - Prompt Chaining
 
-<<<<<<< HEAD
-=======
-### 2. Agentic Workflow
+![Agentic Workflow](D:\Aadhil-Codes\Agentic_design_Patterns\Routing\routing_agent.png)
 
-**Description**: The Routing Agentic Workflow Design Pattern is a foundational design pattern in agentic AI systems. It enables intelligent classification of user inputs and dynamic delegation to specialized agents, tools, prompts, or sub workflows.
+**Description**:The Routing Agentic Workflow Design Pattern is a foundational design pattern in agentic AI systems. It enables intelligent classification of user inputs and dynamic delegation to specialized agents, tools, prompts, or sub workflows.
 
-### How It Works
+#### How It Works
 A central "router" component typically powered by a large language model (LLM) analyzes the incoming query to determine its intent, category, complexity, or type. Based on this classification, it routes the task to the most appropriate specialized handler. This creates separation of concerns, allowing each downstream component to be optimized for specific tasks without compromising overall system performance.
 
-**Use Cases**: Customer Support Systems, Multi-Domain Question Answering, Cost/Performance Balancing
+**Use Cases**: Customer Support Systems processes, Multi-Domain Question Answering, Cost/Performance Balancing
 
-#### Common Use Cases
-1. Customer Support Systems — Directing queries like refunds, technical issues, or general inquiries to different agents or processes.
-2. Multi-Domain Question Answering — Routing domain-specific questions (e.g., legal, medical, technical) to expert agents.
 
->>>>>>> 4752182 (Add routing agent pattern documentation and notebook)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
