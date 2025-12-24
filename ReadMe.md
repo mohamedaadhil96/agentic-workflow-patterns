@@ -52,6 +52,22 @@ This mimics a pipeline or assembly line, allowing focused processing at each sta
 **Use Cases**: Content generation pipelines, research summarization, code refactoring.
 
 
+<<<<<<< HEAD
+=======
+### 2. Agentic Workflow
+
+**Description**: The Routing Agentic Workflow Design Pattern is a foundational design pattern in agentic AI systems. It enables intelligent classification of user inputs and dynamic delegation to specialized agents, tools, prompts, or sub workflows.
+
+### How It Works
+A central "router" component typically powered by a large language model (LLM) analyzes the incoming query to determine its intent, category, complexity, or type. Based on this classification, it routes the task to the most appropriate specialized handler. This creates separation of concerns, allowing each downstream component to be optimized for specific tasks without compromising overall system performance.
+
+**Use Cases**: Customer Support Systems, Multi-Domain Question Answering, Cost/Performance Balancing
+
+#### Common Use Cases
+1. Customer Support Systems — Directing queries like refunds, technical issues, or general inquiries to different agents or processes.
+2. Multi-Domain Question Answering — Routing domain-specific questions (e.g., legal, medical, technical) to expert agents.
+
+>>>>>>> 4752182 (Add routing agent pattern documentation and notebook)
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
