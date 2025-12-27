@@ -63,6 +63,16 @@ A central "router" component typically powered by a large language model (LLM) a
 **Use Cases**: Customer Support Systems processes, Multi-Domain Question Answering, Cost/Performance Balancing
 
 
+### 3. Orchestrator-Worker Agentic Workflow Design Pattern
+
+![Agentic Workflow](Orchestrator-Worker/Orchestrator_diagram.png)
+
+**Description**:The Orchestrator-Worker agentic workflow design pattern is a widely used architecture for building multi-agent AI systems, especially those powered by large language models (LLMs). It enables complex, dynamic tasks by dividing responsibilities between a central coordinator and specialized executors.
+
+#### How It Works
+The orchestrator–worker pattern works by breaking a high-level task into smaller subtasks, delegating them to appropriate workers for independent execution, and then combining their results into a final, coherent output through synthesis and iteration.
+
+**Use Cases**: Research & Analysis Agents, Customer Support Systems, Incident Response & Diagnostics
 
 ## License
 

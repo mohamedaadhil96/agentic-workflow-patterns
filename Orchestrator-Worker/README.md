@@ -1,5 +1,7 @@
 # Orchestrator-Worker Agentic Workflow Design Pattern
 
+![Orchestrator-Worker Agentic Workflow](Orchestrator_diagram.png)
+
 The **Orchestrator-Worker** agentic workflow design pattern is a widely used architecture for building multi-agent AI systems, especially those powered by large language models (LLMs). It enables complex, dynamic tasks by dividing responsibilities between a central coordinator and specialized executors.
 
 ## Core Components
