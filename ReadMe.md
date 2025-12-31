@@ -74,6 +74,18 @@ The orchestrator–worker pattern works by breaking a high-level task into small
 
 **Use Cases**: Research & Analysis Agents, Customer Support Systems, Incident Response & Diagnostics
 
+
+### 3. OEvaluator-Optimizer Agentic Workflow Design Pattern
+
+![Agentic Workflow](Evaluator-Optimizer/evaluator-optimizer.png)
+
+**Description**: The **Evaluator-Optimizer** agentic workflow design pattern (also known as Generator-Critic or Self-Refine) is a powerful architecture for building iterative AI systems, especially those powered by large language models (LLMs). It drives continuous improvement of outputs through a structured feedback loop between generation and critical assessment.
+
+#### How It Works
+The Evaluator Optimizer workflow works as an iterative feedback loop where an optimizer generates an initial solution, an evaluator reviews it against defined quality criteria, and the optimizer refines the output based on that feedback. This cycle repeats until the output meets the required standard or a stopping condition is reached, resulting in a higher-quality final output than a single-pass generation.
+
+**Use Cases**: Content Generation, Reasoning & Problem Solving, Report & Summary Creation
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
