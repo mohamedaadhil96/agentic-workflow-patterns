@@ -29,7 +29,7 @@ To design effective and scalable LLM applications, it's crucial to understand re
 
 ## Key Patterns
 
-### 1. Prompt Chaining
+### 1. Prompt Chaining : Agentic Workflow Design Pattern
 
 ![Prompt Chaining Workflow](https://github.com/mohamedaadhil96/agentic-workflow-patterns/blob/d5dea7811db450f144427593421cdc89257fcb1c/Prompt%20Chaining/prompt_chain_diagram.png)
 
@@ -51,7 +51,7 @@ This mimics a pipeline or assembly line, allowing focused processing at each sta
 
 **Use Cases**: Content generation pipelines, research summarization, code refactoring.
 
-### 2. Agentic Workflow Design Pattern - Prompt Chaining
+### 2. Routing : Agentic Workflow Design Pattern
 
 ![Agentic Workflow](Routing/routing_agent.png)
 
@@ -63,7 +63,7 @@ A central "router" component typically powered by a large language model (LLM) a
 **Use Cases**: Customer Support Systems processes, Multi-Domain Question Answering, Cost/Performance Balancing
 
 
-### 3. Orchestrator-Worker Agentic Workflow Design Pattern
+### 3. Agentic Workflow Design Pattern : Orchestrator-Worker 
 
 ![Agentic Workflow](Orchestrator-Worker/Orchestrator_diagram.png)
 
@@ -75,7 +75,7 @@ The orchestrator–worker pattern works by breaking a high-level task into small
 **Use Cases**: Research & Analysis Agents, Customer Support Systems, Incident Response & Diagnostics
 
 
-### 3. OEvaluator-Optimizer Agentic Workflow Design Pattern
+### 4. Agentic Workflow Design Pattern : Evaluator-Optimizer 
 
 ![Agentic Workflow](Evaluator-Optimizer/evaluator-optimizer.png)
 
